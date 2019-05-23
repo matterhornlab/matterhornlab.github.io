@@ -2,7 +2,7 @@
 layout: post
 title: Launch of Matterhorn Lab
 ---
-<img src="images/Logo_Large.png" width="500">
+<img src="Logo_Large.png" width="500">
 
 
 ## Project Description
