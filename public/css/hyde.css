@@ -250,10 +250,10 @@ a.sidebar-nav-item:focus {
 }
 
 /* Matterhorn Lab */
-.theme-base-ml .sidebar {
+.theme-base-0m .sidebar {
   background-color: #3553e1;
 }
-.theme-base-ml .content a,
-.theme-base-ml .related-posts li a:hover {
+.theme-base-0m .content a,
+.theme-base-0m .related-posts li a:hover {
   color: #3553e1;
 }
