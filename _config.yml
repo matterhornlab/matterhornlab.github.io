@@ -8,14 +8,14 @@ relative_permalinks: false
 
 # Setup
 title:            Matterhorn Lab
-tagline:          'Hoi Du'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              https://hoidu.github.io/
+tagline:          'Matterhorn Lab'
+description:      'An advanced web app for investors searching information about Swiss market large-cap stocks.'
+url:              https://matterhornlab.github.io
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Sebastian A. Ott Nikola Racic Ognjen Divljak Benjamin Vomel Przemek Warnel'
+  url:            
 
 paginate:         5
 
@@ -23,4 +23,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           
