@@ -74,7 +74,7 @@ After preparing dataFrame for our results, we use for loop to iterate through IS
 
 The program is set to automatically download the ratios at the beginning of each month, after they are updated by the Swiss exchange. Having obtained all the ratios, the program creates a dictionary consisting of all datapoints. If datapoints are not available, they are filled with NaN. In the end, all data is merged to previously prepared dataframe. The program prints a message saying that appropriate stock has been scraped and the Selenium browser session is closed. The successful scraping for all ISINs is shown on the Picture 2 below.
 
-<img src="images/scraping_ratios.png" width="650">
+![](https://github.com/matterhornlab/matterhornlab.github.io/blob/master/_posts/scraping_ratios.png?raw=true) 
 
 In the next step of scraping process, we proceed to obtaining prices of stocks as well as of the SMI. Firstly, the program is set to try to access the webpage of SIX historical prices and download HTML. If the access is unsuccessful, the user will obtain a message of connection, timeout or general error or keyboard interruption, depending on the reason of failure. Otherwise BeautifulSoup will start the process by checking whether today’s prices are available for download. Our focus is on Swiss Blue Chip Shares file, where we can find prices of stocks constituting the SMI. The appropriate section of the website is shown on Picture 3 below. 
 
