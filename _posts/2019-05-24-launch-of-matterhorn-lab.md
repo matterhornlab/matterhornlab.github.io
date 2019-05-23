@@ -2,7 +2,7 @@
 layout: post
 title: Launch of Matterhorn Lab
 ---
-<img src="Logo_Large.png" width="500">
+![](https://github.com/matterhornlab/matterhornlab.github.io/blob/master/_posts/Logo_Large.png?raw=true)
 
 
 ## Project Description
