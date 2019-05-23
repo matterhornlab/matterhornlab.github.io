@@ -70,7 +70,7 @@ These buildpacks are required to make sure that the selenium module works. Build
 
 After preparing dataFrame for our results, we use for loop to iterate through ISINs (International Securities Identification Numbers) of all 20 stocks constituting the SMI. We assign the ISINs to every company in a separate file, which is read into Python. Firstly, the program starts a web browser session and opens adequate URL for a particular stock. After opening the URL, Selenium clicks on the “Ratios” button to go to appropriate section of the website and waits 10 seconds to make sure the scraper is not considered a network attack. Next, Selenium hands the page source to BeautifulSoup. The program now looks at the website and finds indexes for the first and last item that we want to scrape – they are “Gross margin” and “Cash flows per share” respectively. Finally, the appropriately selected data is scraped. The example of ratios section of the website is shown on the Picture 1 below. 
 
-<img src="images/ratios_section.png" width="500">
+![](https://github.com/matterhornlab/matterhornlab.github.io/blob/master/_posts/ratios_section.png?raw=true)
 
 The program is set to automatically download the ratios at the beginning of each month, after they are updated by the Swiss exchange. Having obtained all the ratios, the program creates a dictionary consisting of all datapoints. If datapoints are not available, they are filled with NaN. In the end, all data is merged to previously prepared dataframe. The program prints a message saying that appropriate stock has been scraped and the Selenium browser session is closed. The successful scraping for all ISINs is shown on the Picture 2 below.
 
