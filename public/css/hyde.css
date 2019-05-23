@@ -248,3 +248,12 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+/* Matterhorn Lab */
+.theme-base-ml .sidebar {
+  background-color: #3553E1;
+}
+.theme-base-ml .content a,
+.theme-base-ml .related-posts li a:hover {
+  color: #3553E1;
+}
