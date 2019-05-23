@@ -84,7 +84,7 @@ The closing prices are uploaded on the website at 23:35 every day. Therefore, th
 
 In the end, the downloaded stock and SMI prices are combined into a single dataframe and added to our previously prepared database. This outcome is presented on the Picture 4 below.
 
-<img src="images/database_upload.png" width="650">
+![](https://github.com/matterhornlab/matterhornlab.github.io/blob/master/_posts/database_upload.png?raw=true)
 
 
 ## Part 3: Performance Measures
