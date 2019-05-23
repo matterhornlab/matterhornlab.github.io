@@ -78,7 +78,7 @@ The program is set to automatically download the ratios at the beginning of each
 
 In the next step of scraping process, we proceed to obtaining prices of stocks as well as of the SMI. Firstly, the program is set to try to access the webpage of SIX historical prices and download HTML. If the access is unsuccessful, the user will obtain a message of connection, timeout or general error or keyboard interruption, depending on the reason of failure. Otherwise BeautifulSoup will start the process by checking whether today’s prices are available for download. Our focus is on Swiss Blue Chip Shares file, where we can find prices of stocks constituting the SMI. The appropriate section of the website is shown on Picture 3 below. 
 
-<img src="images/SIX_archive.png" width="650">
+![](https://github.com/matterhornlab/matterhornlab.github.io/blob/master/_posts/SIX_archive.png?raw=true)
 
 The closing prices are uploaded on the website at 23:35 every day. Therefore, the program is set to automatically download the newest file at 23:50 in order to make sure that the data is already available. Nevertheless, if the required file is not yet uploaded the user will get an appropriate notification. After downloading the stock prices, BeautifulSoup will open another URL and download the file with prices of the SMI. 
 
