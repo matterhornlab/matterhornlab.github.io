@@ -98,9 +98,9 @@ Next, we proceed to obtaining the following performance measures:
 
 ![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BCumulative%20Return%7D%3D%5Cfrac%7B%5Ctextup%7BCurrent%20Price%20of%20Stock%20-%20Original%20Price%20of%20Stock%7D%7D%7B%5Ctextup%7BCurrent%20Price%20of%20Stock%7D%7D)
 
-![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BAverage%20return%20in%20the%20period%7D%20%3D%20%5Cfrac%7B%5Csum%20%5Ctextup%7BDaily%20Returns%7D%7D%7B%5Ctextup%7BNumber%20of%20Days%7D%7D) <br />
+![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BAverage%20return%20in%20the%20period%7D%20%3D%20%5Cfrac%7B%5Csum%20%5Ctextup%7BDaily%20Returns%7D%7D%7B%5Ctextup%7BNumber%20of%20Days%7D%7D) 
 
-![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BVolatility%7D%20%3D%20%5Csqrt%7B%5Cfrac%7B%5Csum%20%5Cleft%20%28%20%5Ctextup%7BDaily%20Return%20-%20Average%20Return%7D%20%5Cright%20%29%5E%7B2%7D%7D%7B%5Ctextup%7BNumber%20of%20Days%7D%7D%7D) <br />
+![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BVolatility%7D%20%3D%20%5Csqrt%7B%5Cfrac%7B%5Csum%20%5Cleft%20%28%20%5Ctextup%7BDaily%20Return%20-%20Average%20Return%7D%20%5Cright%20%29%5E%7B2%7D%7D%7B%5Ctextup%7BNumber%20of%20Days%7D%7D%7D) 
 
 ![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BSharpe%20Ratio%7D%20%3D%20%5Cfrac%7B%5Ctextup%7BAverage%20Return%7D%7D%7B%5Ctextup%7BVolatility%7D%7D)
 
@@ -108,9 +108,9 @@ At this stage we refer to the database and use statistics functions readily avai
 
 In the end, we prepare calculations of three other, relatively more complex measures: Value at Risk (VaR), Expected Shortfall (ES) and Maximum Drawdown (MDD):
 
-![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BValue%20at%20Risk%20%3D%20Average%20Return%20-%20Z-Score%20*%20Volatility%7D) <br />
+![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BValue%20at%20Risk%20%3D%20Average%20Return%20-%20Z-Score%20*%20Volatility%7D) 
 
-![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BExpected%20Shortfall%7D%20%3D%20%5Ctextup%7BE%7D%20%5Cleft%20%28%5Ctextup%7Bloss%7D%20%5Cmid%5Ctextup%7Bloss%7D%20%3E%20%5Ctextup%7BVaR%7D%20%5Cright%20%29) <br />
+![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BExpected%20Shortfall%7D%20%3D%20%5Ctextup%7BE%7D%20%5Cleft%20%28%5Ctextup%7Bloss%7D%20%5Cmid%5Ctextup%7Bloss%7D%20%3E%20%5Ctextup%7BVaR%7D%20%5Cright%20%29) 
 
 ![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BMaximum%20Drawdown%7D_%7BT%7D%20%3D%20%5Ctextup%7Bmax%7D_%7Bt%5Cleq%20T%7D%20%5Cleft%20%28%20%5Cfrac%7B%5Ctextup%7BMaximum%20Price%7D_%7Bt%7D%20-%20%5Ctextup%7BCurrent%20Price%7D_%7Bt%7D%7D%7B%5Ctextup%7BMaximum%20Price%7D_%7Bt%7D%7D%20%5Cright%20%29)
 
