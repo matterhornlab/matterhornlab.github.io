@@ -5,7 +5,7 @@ title: Launch of Matterhorn Lab
 ![](https://github.com/matterhornlab/matterhornlab.github.io/blob/master/_posts/Logo_Large.png?raw=true)
 
 
-## Project Description
+## Introduction
 The goal of this programming project is to create a web app dedicated to investors searching for financial information about companies, which are part of the Swiss Market (SMI). 
 
 The SMI is the most important index in Switzerland made up of 20 largest and most liquid large- and mid-cap stocks. Currently, the constituent companies are ABB, Adecco, Alcon, Credit Suisse, Geberit, Givaudan, LafargeHolcim, Lonza, Nestlé, Novartis, Richemont, Roche, SGS, Sika, Swatch Group, Swiss Life, Swiss Re, Swisscom, UBS and Zurich Insurance Group. The securities contained in the SMI represent approximately 80%  of the entire Swiss market capitalization, which further indicates the importance of the index.
@@ -116,15 +116,13 @@ Finally, the Risk Measures page presents Value at Risk, Expected Shortfall and M
 In this part of the project we use Python to create layout of each of the pages described above. At the top of every page we put the Matterhorn Lab logo, the dropdown menu, the pages’ tabs and the title indicating analysed stock. Then, each page is divided into 4 rows and two, left and right, columns. For each row we define its content, such as for example a piece of text or a graph. The part of code describing Row 1 of Page 1 (Overview) is shown below. 
 
 ```python
-  # Row 1
-                            html.Div([
-                                    html.H6('Summary',
-                                            className="gs-header gs-text-header padded"),
-                                    html.Br([]),            
-                                    
-                                    html.P(id='Description'), 
-                
-                                        ], className="row"),  #End of Row 1           
+  #Row 1
+html.Div([
+      html.H6('Summary',
+            className="gs-header gs-text-header padded"),
+      html.Br([]),                                   
+      html.P(id='Description'),     
+            ], className="row"),  #End of Row 1           
 ```
 
 Additionally, we use callback functions in order to allow navigating through the web app. The first callback function is needed to switch between the three different pages: Overview, Price Performance and Risk Measures. The second callback function refers to the dropdown menu and it recognizes the stock chosen by user as input. After that, the program downloads appropriate data from the database and calculates performance measures described in part 3. These performance measures are presented in a form of tables, charts or graphs, which outlook is also defined in the callback function. Finally, this prepared output is placed in a specific part of the page for user to view. 
