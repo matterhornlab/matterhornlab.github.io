@@ -93,15 +93,15 @@ Our goal is to provide useful and interesting information to the potential inves
 In the first step we need to determine the number of business days for each of the considered periods. Here appropriate Python functions are used. 
 
 Next, we proceed to obtaining the following performance measures:
-- ![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BPrice%20change%20in%20the%20period%7D%20%3D%20%5Ctextup%7BCurrent%20Price%20of%20Stock%20-%20Original%20Price%20of%20Stock%7D)
-- ![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BCumulative%20Return%7D%3D%5Cfrac%7B%5Ctextup%7BCurrent%20Price%20of%20Stock%20-%20Original%20Price%20of%20Stock%7D%7D%7B%5Ctextup%7BCurrent%20Price%20of%20Stock%7D%7D)
+![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BPrice%20change%20in%20the%20period%7D%20%3D%20%5Ctextup%7BCurrent%20Price%20of%20Stock%20-%20Original%20Price%20of%20Stock%7D)
+![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BCumulative%20Return%7D%3D%5Cfrac%7B%5Ctextup%7BCurrent%20Price%20of%20Stock%20-%20Original%20Price%20of%20Stock%7D%7D%7B%5Ctextup%7BCurrent%20Price%20of%20Stock%7D%7D)
 - ![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BAverage%20return%20in%20the%20period%7D%20%3D%20%5Cfrac%7B%5Csum%20%5Ctextup%7BDaily%20Returns%7D%7D%7B%5Ctextup%7BNumber%20of%20Days%7D%7D)
 - ![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BVolatility%7D%20%3D%20%5Csqrt%7B%5Cfrac%7B%5Csum%20%5Cleft%20%28%20%5Ctextup%7BDaily%20Return%20-%20Average%20Return%7D%20%5Cright%20%29%5E%7B2%7D%7D%7B%5Ctextup%7BNumber%20of%20Days%7D%7D%7D)
 - ![](http://latex.codecogs.com/gif.latex?%5Ctextup%7BSharpe%20Ratio%7D%20%3D%20%5Cfrac%7B%5Ctextup%7BAverage%20Return%7D%7D%7B%5Ctextup%7BVolatility%7D%7D)
 
 At this stage we refer to the database and use statistics functions readily available in Python. We also show a potential, based on historical values 10-year development of 1000 CHF investment in a particular stock, as to provide the investor with more illustrative approach.
 
-In the end, we prepare calculations of three other, relatively more complex measures: Value at Risk (VaR), Expected Shortfall (ES) and Maximum Drawdown (MDD). Value at Risk shows maximum possible loss at a certain level of probability - in our case we take 99% confidence level. In other words, we want to let the investor know that there is only 1% chance they will lose more than the value given by VaR.  In comparison, Expected Shortfall is a more conservative measure, as it presents not the highest but the average of all values in the 1% of worst results. Finally, Maximum Drawdown measures the largest peak-to-through decline of stock’s price.
+In the end, we prepare calculations of three other, relatively more complex measures: Value at Risk (VaR), Expected Shortfall (ES) and Maximum Drawdown (MDD). Value at Risk shows maximum possible loss at a certain level of probability - in our case we take 99% confidence level. In other words, we want to let the investor know that there is only 1% chance they will lose more than the value given by VaR. We calculate VaR with three different methods: parametric, using Monte Carlo Simulation and historic.   In comparison, Expected Shortfall is a more conservative measure, as it presents not the highest but the average of all values in the 1% of worst results. Finally, Maximum Drawdown measures the largest peak-to-through decline of stock’s price.
 
 
 ## Part 4: Matterhorn Lab Web App
