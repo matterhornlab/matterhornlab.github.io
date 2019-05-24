@@ -14,7 +14,7 @@ The final output of the project is a web app called Matterhorn Lab. The web app 
 - Price and Return since June 2007, 
 - Average Return, Return Volatily and Sharpe Ratio for periods of different length (ranging from 1 day to 10 years), 
 - Value at Risk, Expected Shortfall, Maximum Drawdown, 
-- Margins, Price ratios, Valuation, Management effectiveness, Financial Strengths and Per share data.
+- Key Ratios such as Price to Earnings and Return on Equity.
 
 In the end, we believe that using Matterhorn Lab will help investors to make better, more-informed investment decisions. The following text is structured as follows: firstly we present learning outcomes from conducting the project, then we describe specific parts of the project as well as the code structure.
 
@@ -119,9 +119,9 @@ Value at Risk shows maximum possible loss at a certain level of probability - in
 ## Part 4: Matterhorn Lab Web App
 In the final part of our project we use all previously collected data ad prepared calculations to present them in a form of the Matterhorn Lab web app. We aim to create an easily readable, intuitive layout containing all the most important information, which can be used by investor to make decisions regarding potential allocation of SIM stocks to their portfolio. Firstly, the user is asked to select the stock of interest from the drawdown menu at the top of the site. Then, for each stock the web app is comprised of three pages: Overview, Price Performance and Risk Measures. 
 
-Overview contains a Summary of the company together with Company Facts, such as asset class and minimum required investment. Furthermore, a comparison of stock and SMI performance in respect to Average Annual Return (chart) and Cumulative Return (table) for periods of 1, 3, 5, 10 years is also presented. The page has a graph of Hypothetical 10.000 CHF investment in the stock as well as Risk Potential of such investment too.  
+Overview contains a Summary of the company and a comparison of stock and SMI performance in respect to Average Annual Return and Cumulative Return for periods of 1, 3, 5, 10 years is also presented. Moreover, the page shows a graph of Hypothetical 10.000 CHF investment in the stock as well as Risk Potential of such investment too.  
 
-In Price Performance the user will find Current Statistics, including Average Return, Volatility, Sharpe Ratio and Return on Equity. Moreover, the Historic Prices section containing Maximum, Minimum, Range, Maximum Drawdown and Key Performance Ratios obtained on the SIX website are also displayed. 
+In Price Performance the user will find Current Statistics, including Average Return, Volatility and Sharpe Ratio. Moreover, the Historic Prices section containing Current Price, Price Change Today, Average Price as well as Year High and Low. Price Development, Returns and Key Ratios obtained on the SIX website are also displayed. 
 
 Finally, the Risk Measures page presents Value at Risk, Expected Shortfall and Maximum Drawdown.
 
