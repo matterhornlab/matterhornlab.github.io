@@ -25,7 +25,7 @@ In order to access the web app please go to [Matterhorn Lab ](http://matterhorn-
 - [Learning Outcomes](#learning-outcomes)
 - [Part 1: Data Handling Using Postgres SQL](#part-1-data-handling-using-postgres-sql)
 - [Part 2: Webscraping](#part-2-webscraping)
-- [Part 3: Performance Measures](#part-3-performance-measures)
+- [Part 3: Performance Measures and Technical Analysis](#part-3-performance-measures-and-technical-analysis)
 - [Part 4: Matterhorn Lab Web App](#part-4-matterhorn-lab-web-app)
 - [Code Structure](#code-structure)
 - [Authors and Licence](#authors-and-licence)
@@ -89,7 +89,7 @@ In the end, the downloaded stock and SMI prices are combined into a single dataf
 ![](https://github.com/matterhornlab/matterhornlab.github.io/blob/master/_posts/database_upload.png?raw=true)
 
 
-## Part 3: Performance Measures
+## Part 3: Performance Measures and Technical Analysis
 Our goal is to provide useful and interesting information to the potential investor. Therefore, in the third part of the project, we prepare calculations of additional performance measures of analysed companies. Our goal is to present an accurate overview of each stock’s behaviour over time. For this reason, we perform calculations for time periods of different length, ranging from one day to almost 12 years (since the first entries in the database). 
 
 In the first step we need to determine the number of business days for each of the considered periods. Here appropriate Python functions are used. 
@@ -118,14 +118,18 @@ In the end, we prepare calculations of three other, relatively more complex meas
 
 Value at Risk shows maximum possible loss at a certain level of probability - in our case we take 99% confidence level. In other words, we want to let the investor know that there is only 1% chance they will lose more than the value given by VaR. For every period we obtain VaR using three different methods. At first, we use the parametric method (formula above), which requires that we look at price movements of investment in selected period to calculate average return and volatility, assume these measures follow normal distribution and adopt probability theory. Additionally, we employ the historic method, in which we segregate daily returns from lowest to highest, find the 1st percentile and take its top-end value. Furthermore, we use Monte Carlo Simulation to generate one million random numbers following the same distribution as the sample of the historic returns and again look at the 1st percentile of lowest values. In this way we significantly increase the sample and accuracy of our calculations. In the end, we compare results from all three methods to check for robustness. In comparison to VaR, Expected Shortfall is a more conservative measure, as it presents not the highest but the average of all values in the 1% of worst results. Finally, Maximum Drawdown measures the largest peak-to-through decline of stock’s price.
 
+Technical Analysis is an analysis methodology for forecasting the direction of prices through the study of past market data. Here, we present three different tools of technical analysis, which by looking at short-term price movement patterns can give the investor some indication of potential future changes. The first tool is Bollinger Bands, which are a statistical chart presenting 20-day moving average contained between high and low bands. High and low bands are two standard deviations away from the moving average. We define functions checking whether the current price exceeds any of the bands, which could be a signal of strong price movement. Another tool is the Aaron indicator, which is used to identify trend changes in an asset as well as strength of such trends. The idea behind the indicator is that during a trend highs and lows of prices appear regularly, therefore it measures the time between such occurences in order to be able to identify the up- or downtrend. The last tool we employ is Relative Strength Index (RSI), which is a momentum indicator measuring whether an asset is under- or overvalued. The RSI moves between 0 and 100, with values below 30 and above 70 implying under- and overvaluation respectively.
+
 ## Part 4: Matterhorn Lab Web App
-In the final part of our project we use all previously collected data ad prepared calculations to present them in a form of the Matterhorn Lab web app. We aim to create an easily readable, intuitive layout containing all the most important information, which can be used by investor to make decisions regarding potential allocation of SIM stocks to their portfolio. Firstly, the user is asked to select the stock of interest from the drawdown menu at the top of the site. Then, for each stock the web app is comprised of three pages: Overview, Price Performance and Risk Measures. 
+In the final part of our project we use all previously collected data ad prepared calculations to present them in a form of the Matterhorn Lab web app. We aim to create an easily readable, intuitive layout containing all the most important information, which can be used by investor to make decisions regarding potential allocation of SIM stocks to their portfolio. Firstly, the user is asked to select the stock of interest from the drawdown menu at the top of the site. Then, for each stock the web app is comprised of four pages: Overview, Price Performance, Risk Measures and Technical Analysis. 
 
 Overview contains a Summary of the company and a comparison of stock and SMI performance in respect to Average Annual Return and Cumulative Return for periods of 1, 3, 5, 10 years is also presented. Moreover, the page shows a graph of Hypothetical 10.000 CHF investment in the stock as well as Risk Potential of such investment too.  
 
 In Price Performance the user will find Current Statistics, including Average Return, Volatility and Sharpe Ratio. Moreover, the Historic Prices section containing Current Price, Price Change Today, Average Price as well as Year High and Low. Price Development, Returns and Key Ratios obtained on the SIX website are also displayed. 
 
-Finally, the Risk Measures page presents Value at Risk, Expected Shortfall and Maximum Drawdown.
+The Risk Measures page presents development of Value at Risk, Expected Shortfall and Maximum Drawdown.
+
+Finally, the Technical Analysis can be used by the investor to find out about potential future behavior of stock price. The Bollinger Bands and Aaron Indicator signal whether the stock is currently following a down- or uptrend, while Relative Strength Index shows potential under- or overvaluation. 
 
 In this part of the project we use Python to create layout of each of the pages described above. At the top of every page we put the Matterhorn Lab logo, the dropdown menu, the pages’ tabs and the title indicating analysed stock. Then, each page is divided into 4 rows and two, left and right, columns. For each row we define its content, such as for example a piece of text or a graph. The part of code describing Row 1 of Page 1 (Overview) is shown below. 
 
@@ -139,7 +143,7 @@ html.Div([
             ], className="row"),  #End of Row 1           
 ```
 
-Additionally, we use callback functions in order to allow navigating through the web app. The first callback function is needed to switch between the three different pages: Overview, Price Performance and Risk Measures. The second callback function refers to the dropdown menu and it recognizes the stock chosen by user as input. After that, the program downloads appropriate data from the database and calculates performance measures described in part 3. These performance measures are presented in a form of tables, charts or graphs, which outlook is also defined in the callback function. Finally, this prepared output is placed in a specific part of the page for user to view. 
+Additionally, we use callback functions in order to allow navigating through the web app. The first callback function is needed to switch between the four different pages: Overview, Price Performance, Risk Measures and Technical Analysis. The second callback function refers to the dropdown menu and it recognizes the stock chosen by user as input. After that, the program downloads appropriate data from the database and calculates performance measures described in Part 3. These performance measures are presented in a form of tables, charts or graphs, which outlook is also defined in the callback function. Finally, this prepared output is placed in a specific part of the page for user to view. 
 
 
 ## Code Structure
