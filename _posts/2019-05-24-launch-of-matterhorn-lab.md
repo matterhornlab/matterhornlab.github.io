@@ -46,7 +46,7 @@ In the first part of the project we create an SQL database with prices of SMI an
 
 We work with the Django environment to create the database as well as the web app overlay. At the same time, Python is used to appropriately handle the .csv file containing all data initially downloaded from Reuters. The process of filling entries into the database consists of the following two steps. Firstly, we define companies together with their Reuters tickers (e.g. company ABB Ltd., ticker ABBN.S), which will be put in the database. Secondly, we select daily prices for every company and add them to the database in an organized manner. Pictures 1 and 2 below show the outlook of database from admin's account, where we can additionally edit or delete the companies and entries.
 
-
+![](https://github.com/matterhornlab/matterhornlab.github.io/blob/master/_posts/django_entry.png?raw=true)
 
 Since the database only contains historical values, we proceed to Webscraping of SIX Swiss Exchange website in order to regularly upload the database with the newest stocks' and SMI prices.
 
