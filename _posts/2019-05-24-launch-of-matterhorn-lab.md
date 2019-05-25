@@ -35,10 +35,11 @@ In order to access the web app please go to [Matterhorn Lab ](http://matterhorn-
 During the preparation of the Matterhorn Lab project, our team has significantly expanded programming knowledge in the following areas:
 - Python Programming
 - Postgres SQL Database Price Setup
+- Setup of a Web Api using Django
 - Heroku Set up of Python Web App Project
 - Webscraping using different approaches (Requests and Selenium Modules)
 - Dash Web App Programming
-- Github Team Work as well as Github Markdown
+- GitHub Team Work, Github Markdown and Github Pages
 
 
 ## Part 1: Data Handling Using Postgres SQL
@@ -52,7 +53,7 @@ Since the database only contains historical values, we proceed to Webscraping of
 
 
 ## Part 2: Webscraping
-In the second part of the project we scrape the SIX Swiss Exchange website. Our goal is to obtain prices of SMI stocks and of the SMI. Additionally, we scrape the for key financial ratios of the companies. 
+In the second part of the project we scrape the SIX Swiss Exchange website. Our goal is to obtain prices of SMI stocks and of the SMI. Additionally, we scrape the key financial ratios of the companies. 
 
 Webscraping is a technique to automatically access and extract large amounts of data from a website. In order to perform it, we install the Selenium Webdriver as well as the BeautifulSoup library. Selenium is one of the most popular tools for Web UI Automation. It allows automatic execution of actions performed in a web browser such as filling forms or clicking buttons. BeautifulSoup is commonly used to pull data out of HTML and XML files and to provide idiomatic ways of navigating, searching, and modifying the parse tree.
 
@@ -84,7 +85,7 @@ In the next step of scraping process, we proceed to obtaining prices of stocks a
 
 The closing prices are uploaded on the website at 23:35 every day. Therefore, the program is set to automatically download the newest file at 23:50 in order to make sure that the data is already available. Nevertheless, if the required file is not yet uploaded the user will get an appropriate notification. After downloading the stock prices, BeautifulSoup will open another URL and download the file with prices of the SMI. 
 
-In the end, the downloaded stock and SMI prices are combined into a single dataframe and added to our previously prepared database. This outcome is presented on the Picture 6 below.
+In the end, the downloaded stock and SMI prices are added to our previously prepared database. This outcome is presented on the Picture 6 below.
 
 ![](https://github.com/matterhornlab/matterhornlab.github.io/blob/master/_posts/database_upload.png?raw=true)
 
@@ -167,9 +168,9 @@ app.py <br />
     
 ## Authors and Licence
 The Matterhorn Lab project was prepared by:
+- **Ognjen Divljak**
 - **Sebastian A. Ott**
 - **Nikola Racic**
-- **Ognjen Divljak**
 - **Benjamin Vömel**
 - **Przemek Warnel**
 
