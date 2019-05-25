@@ -66,8 +66,8 @@ https://github.com/heroku/heroku-buildpack-chromedriver
 https://github.com/heroku/heroku-buildpack-google-chrome
 
 Config Vars
-https://github.com/heroku/heroku-buildpack-chromedriver
-https://github.com/heroku/heroku-buildpack-google-chrome
+CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver"
+GOOGLE_CHROME_BIN = "/app/.apt/usr/bin/google-chrome"
 ```
 These buildpacks are required to make sure that the selenium module works. Buildpacks are scripts that are run when the app is deployed. They are used to install dependencies for the app and configure its environment.
 
