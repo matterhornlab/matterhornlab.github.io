@@ -171,7 +171,7 @@ Database repository:
 ├── README.md                 # Documentation
 ├── manage.py                 # Import Django
 ├── requirements.txt          # System requirements to run the app
-└── wrapper.py                # 
+└── wrapper.py                # Wrapper code
 ```
 
 ## Authors and Licence
