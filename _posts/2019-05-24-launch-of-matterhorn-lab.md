@@ -27,7 +27,7 @@ In order to access the web app please go to [Matterhorn Lab ](http://matterhorn-
 - [Part 2: Webscraping](#part-2-webscraping)
 - [Part 3: Performance Measures and Technical Analysis](#part-3-performance-measures-and-technical-analysis)
 - [Part 4: Matterhorn Lab Web App](#part-4-matterhorn-lab-web-app)
-- [Code Structure](#code-structure)
+- [Repository Structure](#repository-structure)
 - [Authors and Licence](#authors-and-licence)
 
 
@@ -147,30 +147,30 @@ html.Div([
 Additionally, we use callback functions in order to allow navigating through the web app. The first callback function is needed to switch between the four different pages: Overview, Price Performance, Risk Measures and Technical Analysis. The second callback function refers to the dropdown menu and it recognizes the stock chosen by user as input. After that, the program downloads appropriate data from the database and calculates performance measures described in Part 3. These performance measures are presented in a form of tables, charts or graphs, which outlook is also defined in the callback function. Finally, this prepared output is placed in a specific part of the page for user to view. 
 
 
-## Code Structure
+## Repository Structure
 ```
 Web app repository: 
-    ├── MatterhornLabSDK           # Wrapper (.py) 
-    ├── PerformanceAnalyticsSDK    # Performance measures (.py) 
-    ├── assets                     # Logo, web app layout (.png and .css) 
-    ├── components                 # Scraper, app header, dash table, print button (.py) 
-    ├── data                       # Data sources: stocks, dropdown menu, key ratios (.csv)              
-    ├── Procfile                   # App structure for Heroku
-    ├── README.md                  # Documentation
-    ├── app.py                     # Webpage UI
-    ├── clock.py                   # Automated scraping
-    ├── requirements.txt           # System requirements to run the app
-    └── runtime.txt                # Python version to be used 
+├── MatterhornLabSDK           # Wrapper (.py) 
+├── PerformanceAnalyticsSDK    # Performance measures (.py) 
+├── assets                     # Logo, web app layout (.png and .css) 
+├── components                 # Scraper, app header, dash table, print button (.py) 
+├── data                       # Data sources: stocks, dropdown menu, key ratios (.csv)              
+├── Procfile                   # App structure for Heroku
+├── README.md                  # Documentation
+├── app.py                     # Webpage UI
+├── clock.py                   # Automated scraping
+├── requirements.txt           # System requirements to run the app
+└── runtime.txt                # Python version to be used 
 ```
 ```
 Database repository: 
-    ├── api                        # Database structure (.py and .html) 
-    ├── cassy_base                 # Django and other database settings (.py)           
-    ├── Procfile                   # App structure for Heroku
-    ├── README.md                  # Documentation
-    ├── manage.py                  # Import Django
-    ├── requirements.txt           # System requirements to run the app
-    └── wrapper.py                 # 
+├── api                        # Database structure (.py and .html) 
+├── cassy_base                 # Django and other database settings (.py)           
+├── Procfile                   # App structure for Heroku
+├── README.md                  # Documentation
+├── manage.py                  # Import Django
+├── requirements.txt           # System requirements to run the app
+└── wrapper.py                 # 
 ```
 
 ## Authors and Licence
