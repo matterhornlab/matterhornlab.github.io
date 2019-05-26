@@ -150,7 +150,7 @@ Additionally, we use callback functions in order to allow navigating through the
 ## Repository Structure
 ```
 Web app repository: 
-├── MatterhornLabSDK          # Variable definition, data input (py) 
+├── MatterhornLabSDK          # Variable definition, data input (.py) 
 ├── PerformanceAnalyticsSDK   # Performance measures (.py) 
 ├── assets                    # Logo, web app layout (.png and .css) 
 ├── components                # Scraper, dash table, print (.py) 
