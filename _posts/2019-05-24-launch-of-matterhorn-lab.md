@@ -150,28 +150,28 @@ Additionally, we use callback functions in order to allow navigating through the
 ## Repository Structure
 ```
 Web app repository: 
-├── MatterhornLabSDK           # Wrapper (.py) 
-├── PerformanceAnalyticsSDK    # Performance measures (.py) 
-├── assets                     # Logo, web app layout (.png and .css) 
-├── components                 # Header, dash table, print button (.py) 
-├── data                       # Stocks, dropdown menu, key ratios (.csv)              
-├── Procfile                   # App structure for Heroku
-├── README.md                  # Documentation
-├── app.py                     # Webpage UI
-├── clock.py                   # Automated scraping
-├── requirements.txt           # System requirements to run the app
-├── runtime.txt                # Python version to be used 
-└── smi_scraper.py             # SMI scraper code 
+├── MatterhornLabSDK          # Wrapper (.py) 
+├── PerformanceAnalyticsSDK   # Performance measures (.py) 
+├── assets                    # Logo, web app layout (.png and .css) 
+├── components                # Header, dash table, print button (.py) 
+├── data                      # Stocks, dropdown menu, ratios (.csv)              
+├── Procfile                  # App structure for Heroku
+├── README.md                 # Documentation
+├── app.py                    # Webpage UI
+├── clock.py                  # Automated scraping
+├── requirements.txt          # System requirements to run the app
+├── runtime.txt               # Python version to be used 
+└── smi_scraper.py            # SMI scraper code 
 ```
 ```
 Database repository: 
-├── api                        # Database structure (.py and .html) 
-├── cassy_base                 # Django and other settings (.py)           
-├── Procfile                   # App structure for Heroku
-├── README.md                  # Documentation
-├── manage.py                  # Import Django
-├── requirements.txt           # System requirements to run the app
-└── wrapper.py                 # 
+├── api                       # Database structure (.py and .html) 
+├── cassy_base                # Django and other settings (.py)           
+├── Procfile                  # App structure for Heroku
+├── README.md                 # Documentation
+├── manage.py                 # Import Django
+├── requirements.txt          # System requirements to run the app
+└── wrapper.py                # 
 ```
 
 ## Authors and Licence
