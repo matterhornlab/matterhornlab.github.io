@@ -153,8 +153,8 @@ Web app repository:
 ├── MatterhornLabSDK          # Wrapper (.py) 
 ├── PerformanceAnalyticsSDK   # Performance measures (.py) 
 ├── assets                    # Logo, web app layout (.png and .css) 
-├── components                # Header, dash table, print button (.py) 
-├── data                      # Scraper, stocks, dropdown, ratios (.csv)              
+├── components                # Scraper, dash table, print (.py) 
+├── data                      # Stocks, dropdown, ratios (.csv)              
 ├── Procfile                  # App structure for Heroku
 ├── README.md                 # Documentation
 ├── app.py                    # Webpage UI
