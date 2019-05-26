@@ -151,18 +151,27 @@ Additionally, we use callback functions in order to allow navigating through the
 ```
 Web app repository: 
     ├── MatterhornLabSDK           # Wrapper (.py) 
-    ├── PerformanceAnalyticsSDK    # Calculation of performance measures (.py) 
-    ├── assets                     # Logo and web app layout (.png and .css) 
+    ├── PerformanceAnalyticsSDK    # Performance measures (.py) 
+    ├── assets                     # Logo, web app layout (.png and .css) 
     ├── components                 # Scraper, app header, dash table, print button (.py) 
-    ├── data                       # Data sources: stocks description and prices, dropdown menu, key ratios (.csv)              
+    ├── data                       # Data sources: stocks, dropdown menu, key ratios (.csv)              
     ├── Procfile                   # App structure for Heroku
     ├── README.md                  # Documentation
     ├── app.py                     # Webpage UI
     ├── clock.py                   # Automated scraping
-    ├── requirements.txt           # System requirements to run the ap
+    ├── requirements.txt           # System requirements to run the app
     └── runtime.txt                # Python version to be used 
 ```
-
+```
+Database repository: 
+    ├── api                        # Database structure (.py and .html) 
+    ├── cassy_base                 # Django and other database settings (.py)           
+    ├── Procfile                   # App structure for Heroku
+    ├── README.md                  # Documentation
+    ├── manage.py                  # Import Django
+    ├── requirements.txt           # System requirements to run the app
+    └── wrapper.py                 # 
+```
 
 ## Authors and Licence
 The Matterhorn Lab project was prepared by:
