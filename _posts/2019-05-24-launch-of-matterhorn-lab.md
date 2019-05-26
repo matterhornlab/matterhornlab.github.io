@@ -153,8 +153,8 @@ Web app repository:
 ├── MatterhornLabSDK           # Wrapper (.py) 
 ├── PerformanceAnalyticsSDK    # Performance measures (.py) 
 ├── assets                     # Logo, web app layout (.png and .css) 
-├── components                 # Scraper, app header, dash table, print button (.py) 
-├── data                       # Data sources: stocks, dropdown menu, key ratios (.csv)              
+├── components                 # Scraper, header, dash table, print button (.py) 
+├── data                       # Stocks, dropdown menu, key ratios (.csv)              
 ├── Procfile                   # App structure for Heroku
 ├── README.md                  # Documentation
 ├── app.py                     # Webpage UI
@@ -165,7 +165,7 @@ Web app repository:
 ```
 Database repository: 
 ├── api                        # Database structure (.py and .html) 
-├── cassy_base                 # Django and other database settings (.py)           
+├── cassy_base                 # Django and other settings (.py)           
 ├── Procfile                   # App structure for Heroku
 ├── README.md                  # Documentation
 ├── manage.py                  # Import Django
