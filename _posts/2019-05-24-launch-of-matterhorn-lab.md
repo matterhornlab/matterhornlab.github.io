@@ -153,14 +153,15 @@ Web app repository:
 ├── MatterhornLabSDK           # Wrapper (.py) 
 ├── PerformanceAnalyticsSDK    # Performance measures (.py) 
 ├── assets                     # Logo, web app layout (.png and .css) 
-├── components                 # Scraper, header, dash table, print button (.py) 
+├── components                 # Header, dash table, print button (.py) 
 ├── data                       # Stocks, dropdown menu, key ratios (.csv)              
 ├── Procfile                   # App structure for Heroku
 ├── README.md                  # Documentation
 ├── app.py                     # Webpage UI
 ├── clock.py                   # Automated scraping
 ├── requirements.txt           # System requirements to run the app
-└── runtime.txt                # Python version to be used 
+├── runtime.txt                # Python version to be used 
+└── smi_scraper.py             # SMI scraper code 
 ```
 ```
 Database repository: 
