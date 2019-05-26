@@ -148,23 +148,19 @@ Additionally, we use callback functions in order to allow navigating through the
 
 
 ## Code Structure
-
-app.py <br />
-   .gitignore <br />
-   .Procfile <br />
-   .requirements.txt <br />
-   credentials/ <br />
-      __init__.py <br />
-      Credentials.py <br />
-      
-        .
-    ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── test                    # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                   # Tools and utilities
-    ├── LICENSE
-    └── README.md
+Web app repository: <br />
+    ├── MatterhornLabSDK           # Wrapper (.py) <br />
+    ├── PerformanceAnalyticsSDK    # Calculation of performance measures (.py) <br />
+    ├── assets                     # Logo and web app layout (.png and .css) <br />
+    ├── components                 # Scraper, app header, dash table, print button (.py) <br />
+    ├── data                       # Data sources: stocks description and prices, dropdown menu, key ratios (.csv) <br />
+    ├── .gitignore                 <br />
+    ├── Procfile                   <br />
+    ├── README.md                  # Documentation <br />
+    ├── app.py                     # Webpage UI <br />
+    ├── clock.py                   # Automated scraping <br />
+    ├── requirements.txt           # System requirements to run the app <br />
+    └── runtime.txt                
     
 ## Authors and Licence
 The Matterhorn Lab project was prepared by:
