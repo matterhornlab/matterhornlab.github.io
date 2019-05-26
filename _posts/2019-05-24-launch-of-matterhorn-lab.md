@@ -148,20 +148,23 @@ Additionally, we use callback functions in order to allow navigating through the
 
 
 ## Code Structure
-Web app repository: <br />
-    ├── MatterhornLabSDK           # Wrapper (.py) <br />
-    ├── PerformanceAnalyticsSDK    # Calculation of performance measures (.py) <br />
-    ├── assets                     # Logo and web app layout (.png and .css) <br />
-    ├── components                 # Scraper, app header, dash table, print button (.py) <br />
-    ├── data                       # Data sources: stocks description and prices, dropdown menu, key ratios (.csv) <br />
-    ├── .gitignore                 <br />
-    ├── Procfile                   <br />
-    ├── README.md                  # Documentation <br />
-    ├── app.py                     # Webpage UI <br />
-    ├── clock.py                   # Automated scraping <br />
-    ├── requirements.txt           # System requirements to run the app <br />
+```
+Web app repository: 
+    ├── MatterhornLabSDK           # Wrapper (.py) 
+    ├── PerformanceAnalyticsSDK    # Calculation of performance measures (.py) 
+    ├── assets                     # Logo and web app layout (.png and .css) 
+    ├── components                 # Scraper, app header, dash table, print button (.py) 
+    ├── data                       # Data sources: stocks description and prices, dropdown menu, key ratios (.csv) 
+    ├── .gitignore                
+    ├── Procfile                   
+    ├── README.md                  # Documentation
+    ├── app.py                     # Webpage UI
+    ├── clock.py                   # Automated scraping
+    ├── requirements.txt           # System requirements to run the ap
     └── runtime.txt                
-    
+```
+
+
 ## Authors and Licence
 The Matterhorn Lab project was prepared by:
 - **Ognjen Divljak**
