@@ -154,14 +154,13 @@ Web app repository:
     ├── PerformanceAnalyticsSDK    # Calculation of performance measures (.py) 
     ├── assets                     # Logo and web app layout (.png and .css) 
     ├── components                 # Scraper, app header, dash table, print button (.py) 
-    ├── data                       # Data sources: stocks description and prices, dropdown menu, key ratios (.csv) 
-    ├── .gitignore                
-    ├── Procfile                   
+    ├── data                       # Data sources: stocks description and prices, dropdown menu, key ratios (.csv)              
+    ├── Procfile                   # Definition of app structure for Heroku
     ├── README.md                  # Documentation
     ├── app.py                     # Webpage UI
     ├── clock.py                   # Automated scraping
     ├── requirements.txt           # System requirements to run the ap
-    └── runtime.txt                
+    └── runtime.txt                # Definition of Python version
 ```
 
 
